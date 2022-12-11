@@ -160,7 +160,7 @@ npm run dev
 }
 ```
 
-* Além do padrão tradicional do sistema, a solução também transforma os dados inseridos em metadados baseados em ERC-721. Tal funcionalidade permite que exista uma versão de metadados para possível tokenização no formato de ERC-721. Esse formato, inclusive, é totalmente compatível com marketplaces de NFTs, como o OpenSea.
+* Além do padrão tradicional do sistema, a solução também transforma os dados inseridos em metadados baseados em ERC-721 (seguindo as recomendações do [NFT School para Metadata Schemas](https://nftschool.dev/reference/metadata-schemas/)). Tal funcionalidade permite que exista uma versão de metadados para possível tokenização no formato de ERC-721. Esse formato, inclusive, é totalmente compatível com marketplaces de NFTs, como o [OpenSea](https://docs.opensea.io/docs/metadata-standards).
 
 * A key "image" aponta para o documento ou imagem submetida.
 
@@ -180,4 +180,4 @@ npm run dev
 --
 * Uma coleção do Postman para chamada às rotas está sendo disponibilizada na pasta [collection_postman](https://github.com/blockchainone/spunet-web3/tree/main/collection_postman)
 
-* Um arquivo env de exemplo também pode ser utilizado
+* Um arquivo env de exemplo também foi disponibilizado
