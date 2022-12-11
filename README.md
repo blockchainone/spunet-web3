@@ -35,8 +35,8 @@ Consiste na comunicação com as blockchains integradas à solução. Para este 
 1. Clone o repositório e instale suas dependências.
 
 ```
-git clone https://github.com/blockchainone/sei-web3.git
-cd sei-web3
+git clone https://github.com/blockchainone/spunet-web3.git
+cd spunet-web3
 ```
 
 ```
