@@ -27,7 +27,7 @@ Possibilida o uso de modelos gerais de documentos, implantação de contratos in
 Consiste na comunicação com as blockchains integradas à solução. Para este projeto específico a solução conecta-se à Celo, mas pode ser integrada de forma genérica à outras blockchains baseadas em Ethereum Virtual Machine (EVM).
 
 ### Fluxo da Solução
-![](https://gateway.pinata.cloud/ipfs/QmYQ885vr4UYb83677xwEZ9WE2ASfWeYyuvUd3ptZJa14z)
+![](https://gateway.pinata.cloud/ipfs/QmRQpyxNfG64uDCZxsitTfhFvuwBkp2B3NUEgcd6pYnJLK)
 
 ## Configurações Técnicas para Execução da API
 
