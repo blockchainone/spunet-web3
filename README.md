@@ -165,6 +165,7 @@ npm run dev
 * A key "image" aponta para o documento ou imagem submetida.
 
 4. Validação de Documento
+```JSON
 {
     "result": {
         "returnCode": "success",
@@ -172,9 +173,11 @@ npm run dev
         "blockExplorer": "https://alfajores.celoscan.io/tx/0x9E64daA61B3e2fA4f176c3a5aC528F3ada2b9979"
     }
 }
+```
 
 * Esta funcionalidade permite verificar a integridade dos documentos. Um documento, ao ser submetido ao sistema, pode ser comparado ao seu seu hash imutável já registrado previamente em blockchain. Caso os valores sejam iguais, trata-se do mesmo documento e a validação retorna "true" e o link da transação no Explorer. Caso os valores sejam diferentes, o sistema retorna "false". Ou seja, não é o mesmo documento inserido inicialmente em blockchain.
 
 --
-* Uma coleção do Postman para chamada às rotas está sendo disponibilizada na pasta collection_postman
+* Uma coleção do Postman para chamada às rotas está sendo disponibilizada na pasta ![collection_postman](https://github.com/blockchainone/spunet-web3/tree/main/collection_postman)
+
 * Um arquivo env de exemplo também pode ser utilizado
