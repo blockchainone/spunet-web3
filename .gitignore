@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+yarn.lock
+mochawesome-report/
+sslcert/
+.env
+env-script.sh
+logs/*.log

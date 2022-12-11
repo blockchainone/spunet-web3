@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "a5e2d7b1-75ff-4936-aa81-7c7ecc13236a",
+		"name": "spunet-web3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5845405"
+	},
+	"item": [
+		{
+			"name": "organization",
+			"item": [
+				{
+					"name": "organizations",
+					"protocolProfileBehavior": {
+						"strictSSL": false,
+						"followRedirects": false,
+						"disableUrlEncoding": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_docstone}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nameOrg",
+									"value": "BlockchainOne",
+									"type": "text"
+								},
+								{
+									"key": "emailOrg",
+									"value": "emailteste@domain.br",
+									"type": "text"
+								},
+								{
+									"key": "productNameOrg",
+									"value": "produto234",
+									"type": "text"
+								},
+								{
+									"key": "nameResponsible",
+									"value": "Nome Teste",
+									"type": "text"
+								},
+								{
+									"key": "cpfResponsible",
+									"value": "26015087013",
+									"type": "text"
+								},
+								{
+									"key": "cnpjOrg",
+									"value": "32857055000109",
+									"type": "text"
+								},
+								{
+									"key": "certificate",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/organizations",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"organizations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "organizations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_docstone}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{ip_docstone}}/organizations",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"organizations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "orgKey",
+									"value": "{{org_key_test}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/token",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "model",
+			"item": [
+				{
+					"name": "models",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_docstone}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "description",
+									"value": "Modelo padrão para testes",
+									"type": "text"
+								},
+								{
+									"key": "attributes",
+									"value": "[\"idInternal\",\"hashDoc\",\"campo1\"]",
+									"type": "text"
+								},
+								{
+									"key": "modelName",
+									"value": "padrao1",
+									"type": "text"
+								},
+								{
+									"key": "attrNotNull",
+									"value": "campo1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/models",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "models",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_docstone}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idModel",
+									"value": "mdurc2vacklbi9at2b",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/models",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "models",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_docstone}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/models",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"models"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contract",
+			"item": [
+				{
+					"name": "contract",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_docstone}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idBlockchain",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/contracts",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contract",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_docstone}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idContract",
+									"value": "cturc2v3sslbjf4qaf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/contracts",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "document",
+			"item": [
+				{
+					"name": "document write",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_docstone}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idContract",
+									"value": "cturc2v3sslbjf4qaf",
+									"contentType": "",
+									"type": "text"
+								},
+								{
+									"key": "idModel",
+									"value": "mdurc2v16klbibsut1",
+									"contentType": "",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "[\"data1\",\"data2\",\"data3\"]",
+									"contentType": "",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"type": "file",
+									"src": "/C:/Users/rapha/Desktop/ipfs.txt"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/documents",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "document read",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token_docstone}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idDocument",
+									"value": "dcurc2v3sslbjf4z5f",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/documents_read",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"documents_read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "document update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_docstone}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idDocument",
+									"value": "dcurc2v3sslbjf4z5f",
+									"type": "text"
+								},
+								{
+									"key": "attributes",
+									"value": "[\"hashDoc\", \"campo1\"]",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "[\"teste\", \"teste\"]",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"type": "file",
+									"src": "/C:/Users/rapha/Desktop/ipfs.txt",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/documents",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "document validate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_docstone}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idDocument",
+									"value": "dcurc2vdkklbfsj5yv",
+									"type": "text"
+								},
+								{
+									"key": "hashDoc",
+									"value": "teste",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/validate_document",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"validate_document"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "document metadata",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{token_docstone}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cid",
+									"value": "QmW3u74AgcPRvXDeUvoDWBiHHU1WTMuLq2umRQH1ccfE7x",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{ip_docstone}}/metadata_document",
+							"protocol": "http",
+							"host": [
+								"{{ip_docstone}}"
+							],
+							"path": [
+								"metadata_document"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "tokenJwt",
+			"value": ""
+		}
+	]
+}
