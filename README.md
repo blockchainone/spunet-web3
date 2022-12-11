@@ -170,7 +170,7 @@ npm run dev
     "result": {
         "returnCode": "success",
         "validate": true,
-        "blockExplorer": "https://alfajores.celoscan.io/tx/0x43fe3C0e090fC8C7c01ce64FA1C844F97051400f"
+        "blockExplorer": "https://alfajores.celoscan.io/tx/0x93ef883157189a8290fd36823b65c3327750bd48c030dc917e75d81b8610ea80"
     }
 }
 ```
