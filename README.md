@@ -3,6 +3,12 @@
 
 Implementação de uma Application Programming Interface para integração do sistema SPUNet com a Web 3.0, por meio de serviços de registros de dados gerais de caracterização e incorporação de imóveis na blockchain da Celo, utilizando métodos de armazenamento descentralizados e padronização de dados e modelos para gestão integrada de documentos.
 
+### Vantagens
+* Padronização de dados e modelos relacionados à caracterização e incorporação de imóveis;
+* Proporcionar integridade, autenticidade e transparência dos diversos documentos dos processos de caracterização e incorporação de imóveis;
+* Solução com integração Low Code, visto que os desenvolvedores do SPU não precisarão de profundo conhecimento pra integrar, pois irão apenas se comunicar os com endpoints do serviço;
+* Comunicação com blockchain totalmente transparente para sistemas já prontos.
+
 ### Arquitetura SPUNet na WEB3
 ![](https://gateway.pinata.cloud/ipfs/QmP5rHEtyUB8mAQptapZNyZDiksHAXS6CGPbtQ4tqSi6pY)
 
